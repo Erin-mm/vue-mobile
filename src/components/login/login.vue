@@ -16,26 +16,24 @@
       </li>
      </ul>
    </div>
-    <div class="test">
-      <span>22222</span>
-      <span>2222</span>
-    </div>
   </div>
 </template>
 <script>
-import { Header } from "mint-ui";
-import aliImg from "../../assets/images/ali.png";
-import wechatImg from "../../assets/images/wechat.png";
-import weiboImg from "../../assets/images/weibo.png";
+import aliImg from '../../assets/images/ali.png';
+import wechatImg from '../../assets/images/wechat.png';
+import weiboImg from '../../assets/images/weibo.png';
 
 export default {
   data() {
     return {
-      images: [aliImg, wechatImg, weiboImg]
-    };
+      images: [aliImg, wechatImg, weiboImg],
+      test: ''
+    }
   },
-  methods: {}
-};
+  methods: {
+
+  }
+}
 </script>
 <style lang='scss' scoped>
   .test{
