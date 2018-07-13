@@ -1,27 +1,29 @@
 <template>
   <div class="login">
-   <mt-header fixed title="登录">
+    <mt-header fixed title="登录">
       <router-link to="/" slot="left">
-    <mt-button icon="back"></mt-button>
-  </router-link>
-   </mt-header>
-   <div class="login-box">
-     <img src="../../assets/images/avatar.png" alt="this is avatar">
-   </div>
-   <div class="login-way">
-     <p>登入方式</p>
-     <ul class="login-item">
-      <li v-for="(imgItem,i) in images" :key='i'>
-        <img :src="imgItem" alt="this is ali">
-      </li>
-     </ul>
-   </div>
+        <mt-button icon="back"></mt-button>
+      </router-link>
+    </mt-header>
+    <div class="login-box">
+      <img src="../../assets/images/avatar.png" alt="this is avatar">
+    </div>
+    <div class="login-way">
+      <p>登入方式</p>
+      <ul class="login-item">
+        <li v-for="(imgItem,i) in images" :key='i'>
+          <router-link to="/password">
+            <img :src="imgItem" alt="this is ali">
+          </router-link>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 <script>
-import aliImg from '../../assets/images/ali.png';
-import wechatImg from '../../assets/images/wechat.png';
-import weiboImg from '../../assets/images/weibo.png';
+import aliImg from '../../assets/images/ali.png'
+import wechatImg from '../../assets/images/wechat.png'
+import weiboImg from '../../assets/images/weibo.png'
 
 export default {
   data() {
@@ -30,18 +32,16 @@ export default {
       test: ''
     }
   },
-  methods: {
-
-  }
+  methods: {}
 }
 </script>
 <style lang='scss' scoped>
-  .test{
-    background: #ccc;
-    span{
-      font-size:0.24rem;
-    }
+.test {
+  background: #ccc;
+  span {
+    font-size: 0.24rem;
   }
+}
 .login-box {
   display: flex;
   padding-top: 0.8rem;
